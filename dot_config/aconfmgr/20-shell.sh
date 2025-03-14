@@ -10,6 +10,7 @@ AddPackage kakoune # Multiple-selection, UNIX-flavored modal editor
 AddPackage chezmoi # Manage your dotfiles across multiple machines
 
 # Unsurprising essentials
+AddPackage keychain # A front-end to ssh-agent, allowing one long-running ssh-agent process per system, rather than per login
 AddPackage less # A terminal based program for viewing text files
 AddPackage man-db # A utility for reading man pages
 AddPackage sudo # Give certain users the ability to run some commands as root

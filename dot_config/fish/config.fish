@@ -1,9 +1,14 @@
 # Fish shell config
 
-# Start window manager when logging in from the initial terminal
-set CURRENT_TTY (tty)
-if [ "$CURRENT_TTY" = "/dev/tty1" ]
-    exec niri
+# Early starting applications like daemons
+if status is-interactive
+    keychain --eval --quiet -Q id_ed25519 | source
+
+    # Start window manager when logging in from the initial terminal
+    set CURRENT_TTY (tty)
+    if [ "$CURRENT_TTY" = "/dev/tty1" ]
+        exec niri
+    end
 end
 
 abbr --add cm chezmoi
@@ -51,8 +56,4 @@ if type -q "exa"
     abbr --add ls echo "baka"
     abbr --add la exa -la
     abbr --add lag exa -la --git
-end
-
-if status is-interactive
-    # Commands to run in interactive sessions can go here
 end
