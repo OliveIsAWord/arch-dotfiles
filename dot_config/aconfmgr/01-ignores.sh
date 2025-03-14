@@ -39,6 +39,7 @@ IgnorePath /etc/resolv.conf
 IgnorePath /etc/shadow
 IgnorePath /etc/shells
 IgnorePath /etc/group
+IgnorePath /etc/NetworkManager/system-connections # contains wifi network names and passwords in plaintext lol
 IgnorePath /etc/mkinitcpio.d/linux.preset
 IgnorePath /etc/os-release
 IgnorePath /etc/passwd

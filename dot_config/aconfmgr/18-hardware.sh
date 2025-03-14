@@ -8,7 +8,13 @@ then
 	AddPackage amd-ucode # Microcode update image for AMD CPUs
 elif [[ $HOSTNAME == "vespera" ]]
 then
-	echo TODO
+	# AMD CPU
+	AddPackage amd-ucode # Microcode update image for AMD CPUs
+	# Laptop: query battery power
+	AddPackage upower # Abstraction for enumerating power devices, listening to device events and querying history and statistics
+	# Laptop: change screen brightness
+	AddPackage brightnessctl # Lightweight brightness control tool
+	RemovePackage flatpak # maybe not flatpak
 else
 	echo "Unrecognized host" $HOSTNAME
 	return 1
