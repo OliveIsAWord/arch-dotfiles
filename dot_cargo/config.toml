@@ -1,0 +1,4 @@
+[build]
+
+# Have Cargo use a single shared directory for all build output.
+target-dir = "/home/olive/.cache/cargo-target"
