@@ -5,5 +5,5 @@ I use [aconfmgr](https://github.com/CyberShadow/aconfmgr) to declaratively manag
 # Notable Applications
 - Shell: Fish
 - Terminal: Alacritty
-- DM: LightDM
+- DM: None!
 - WM: Niri

@@ -1,10 +1,5 @@
 # Graphical desktop environment.
 
-# We use LightDM as our display manager. I am probably imminently removing this in favor of directly starting our window manager from the shell upon TTY login.
-AddPackage lightdm # A lightweight display manager
-AddPackage lightdm-gtk-greeter # GTK+ greeter for LightDM
-CopyFile /etc/lightdm/lightdm.conf
-
 # Trying out Niri, we'll see if it's any good
 AddPackage niri # A scrollable-tiling Wayland compositor
 

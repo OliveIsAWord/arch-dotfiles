@@ -1,3 +1,11 @@
+# Fish shell config
+
+# Start window manager when logging in from the initial terminal
+set CURRENT_TTY (tty)
+if [ "$CURRENT_TTY" = "/dev/tty1" ]
+    exec niri
+end
+
 abbr --add cm chezmoi
 abbr --add fish-reload-config 'source ~/.config/fish/**/*.fish'
 abbr --add m mkcd
