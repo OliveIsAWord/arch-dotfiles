@@ -1,8 +1,5 @@
 # A list of filepaths not to track
 
-# TODO: This is a configuration file but the warning at the top that it must be edited by visudo scares me.
-IgnorePath '/etc/sudoers'
-
 # Only track /etc
 IgnorePath '/boot/**'
 IgnorePath '/var/**'

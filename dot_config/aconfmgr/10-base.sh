@@ -17,6 +17,9 @@ CreateFileOf /etc/locale.conf "LANG=en_US.UTF-8"
 CreateFileOf /etc/vconsole.conf "KEYMAP=us"
 CopyFile /etc/login.defs
 
+visudo -cf "$config_dir/files/etc/sudoers" # verify integrity of sudo configuration
+CopyFile /etc/sudoers
+
 # OpenSSH configuration
 CopyFile /etc/ssh/sshd_config # use a high port number for WAN
 
