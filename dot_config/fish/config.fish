@@ -14,6 +14,9 @@ abbr --add v view
 abbr --add g git
 abbr --add gs git status
 
+export EDITOR=kak
+export VISUAL=kak
+
 function mkcd
     mkdir $argv
     cd $argv
