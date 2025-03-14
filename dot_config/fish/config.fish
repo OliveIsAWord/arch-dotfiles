@@ -3,6 +3,9 @@ abbr --add fish-reload-config 'source ~/.config/fish/**/*.fish'
 abbr --add m mkcd
 abbr --add v view
 
+abbr --add g git
+abbr --add gs git status
+
 function mkcd
     mkdir $argv
     cd $argv
@@ -36,6 +39,7 @@ if type -q "exa"
     abbr --add l echo "baka"
     abbr --add ls echo "baka"
     abbr --add la exa -la
+    abbr --add lag exa -la --git
 end
 
 if status is-interactive
