@@ -23,6 +23,11 @@ IgnorePath '/etc/pacman.d'
 IgnorePath '/etc/ca-certificates'
 IgnorePath '/etc/fonts'
 
+# Ignore systemd units, make the user enable them manually
+IgnorePackage systemd
+IgnorePath /etc/systemd/system
+IgnorePath /etc/systemd/user
+
 # Specific /etc files that should not be tracked.
 IgnorePath /etc/.pwd.lock
 IgnorePath /etc/.updated
@@ -42,3 +47,6 @@ IgnorePath /etc/os-release
 IgnorePath /etc/passwd
 IgnorePath /etc/subgid
 IgnorePath /etc/subuid
+IgnorePath /etc/ssh
+IgnorePath /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+IgnorePath /etc/ssh/sshd_config.d/20-systemd-userdb.conf

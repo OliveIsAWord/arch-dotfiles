@@ -4,7 +4,6 @@
 AddPackage lightdm # A lightweight display manager
 AddPackage lightdm-gtk-greeter # GTK+ greeter for LightDM
 CopyFile /etc/lightdm/lightdm.conf
-CreateLink /etc/systemd/system/display-manager.service /usr/lib/systemd/system/lightdm.service
 
 # Trying out Niri, we'll see if it's any good
 AddPackage niri # A scrollable-tiling Wayland compositor

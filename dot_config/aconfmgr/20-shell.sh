@@ -6,7 +6,8 @@ AddPackage fish # Smart and user friendly shell intended mostly for interactive 
 # And our text editor of choice is Kakoune, because a foxgirl named Xenia demanded it.
 AddPackage kakoune # Multiple-selection, UNIX-flavored modal editor
 
-# This is where we should put chezmoi if it's any good.
+# Chezmoi manages our system configuration globally.
+AddPackage chezmoi # Manage your dotfiles across multiple machines
 
 # Unsurprising essentials
 AddPackage less # A terminal based program for viewing text files
@@ -19,3 +20,4 @@ AddPackage dust # A more intuitive version of du in rust
 AddPackage eza # A modern replacement for ls (community fork of exa)
 AddPackage hyfetch # Neofetch with LGBTQ+ pride flags!
 AddPackage rust-script # Run Rust files and expressions as scripts without any setup or compilation
+AddPackage tree # A directory listing program displaying a depth indented list of files
