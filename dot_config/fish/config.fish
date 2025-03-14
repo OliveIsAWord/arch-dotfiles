@@ -57,3 +57,7 @@ if type -q "exa"
     abbr --add la exa -la
     abbr --add lag exa -la --git
 end
+
+if type -q "paru"
+    abbr --add pacman paru
+end
