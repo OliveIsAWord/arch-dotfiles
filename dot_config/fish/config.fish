@@ -2,15 +2,15 @@
 
 # Early starting applications like daemons
 if status is-interactive
-    keychain --eval --quiet -Q id_ed25519 | source
-
     # Start window manager when logging in from the initial terminal
     set CURRENT_TTY (tty)
     if [ "$CURRENT_TTY" = "/dev/tty1" ]
         exec niri
     end
+    keychain --eval --quick --quiet id_ed25519 | source
 end
 
+abbr --add c cargo
 abbr --add cm chezmoi
 abbr --add fish-reload-config 'source ~/.config/fish/**/*.fish'
 abbr --add m mkcd
