@@ -1,3 +1,9 @@
+[alias]
+f = "fmt"
+c = "clippy"
+n = "clippy -- -Wclippy::pedantic"
+k = "clippy -- -Wclippy::nursery"
+
 [build]
 
 # Have Cargo use a single shared directory for all build output.
