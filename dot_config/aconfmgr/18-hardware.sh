@@ -15,6 +15,9 @@ then
 	# Laptop: change screen brightness
 	AddPackage brightnessctl # Lightweight brightness control tool
 	RemovePackage flatpak # maybe not flatpak
+	# Laptop: access bluetooth
+       AddPackage bluez # Daemons for the bluetooth protocol stack
+       AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
 else
 	echo "Unrecognized host" $HOSTNAME
 	return 1

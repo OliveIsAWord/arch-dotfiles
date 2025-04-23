@@ -1,3 +1,7 @@
+# Enable LSP integration
+eval %sh{kak-lsp}
+lsp-enable
+
 # Set the colour scheme
 #colorscheme kanagawa # we rely on the system theme being kanagawa
 set-face global comment "rgb:ffa066+i"

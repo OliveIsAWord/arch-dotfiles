@@ -4,6 +4,7 @@
 IgnorePath '/boot/**'
 IgnorePath '/var/**'
 IgnorePath '/lost+found'
+IgnorePath '/swapfile'
 
 # ... except for /usr/bin/sh
 IgnorePath '/usr'
