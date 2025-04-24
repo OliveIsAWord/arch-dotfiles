@@ -6,7 +6,6 @@
 AddPackage 7zip # File archiver for extremely high compression
 AddPackage gdb # The GNU Debugger
 AddPackage kakoune-lsp # Kakoune Language Server Protocol Client
-AddPackage mako # Lightweight notification daemon for Wayland
 AddPackage noto-fonts-cjk # Google Noto CJK fonts
 AddPackage noto-fonts-emoji # Google Noto emoji fonts
 AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA configuration

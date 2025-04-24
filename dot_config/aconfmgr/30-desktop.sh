@@ -7,8 +7,9 @@ AddPackage niri # A scrollable-tiling Wayland compositor
 AddPackage fuzzel # Application launcher for wlroots based Wayland compositors
 AddPackage waybar # Highly customizable Wayland bar for Sway and Wlroots based compositors
 AddPackage xwayland-satellite # Xwayland outside your Wayland
-# TODO: We are missing a lot! Notifications, portals, and other important DE components.
+AddPackage mako # Lightweight notification daemon for Wayland
 
 # Applications.
 AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
 AddPackage firefox # Fast, Private & Safe Web Browser
+AddPackage --foreign activate-linux # The "Activate Windows" watermark ported to Linux with Xlib and cairo in C
