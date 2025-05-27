@@ -19,6 +19,8 @@ abbr --add v view
 abbr --add g git
 abbr --add gs git status
 
+abbr --add k kak
+
 export EDITOR=kak
 export VISUAL=kak
 
@@ -58,6 +60,14 @@ if type -q "exa"
     abbr --add lag exa -la --git
 end
 
+if type -q "bat"
+    abbr --add b bat
+end
+
 if type -q "paru"
     abbr --add pacman paru
+end
+
+function fish_greeting
+    ~/.config/fish/print_random_kak_key/main.rs
 end
