@@ -3,3 +3,13 @@
 	name = OliveIsAWord
 [init]
 	defaultBranch = main
+[alias]
+	s = status
+	aa = config --global
+	c = commit
+	d = diff
+	a = add
+	l = log
+	ap = add --patch .
+[submodule]
+	recurse = true
