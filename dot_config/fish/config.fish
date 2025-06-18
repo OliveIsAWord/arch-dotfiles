@@ -68,6 +68,12 @@ if type -q "paru"
     abbr --add pacman paru
 end
 
+set RANDOM_KAK "$__fish_config_dir/print_random_kak_key"
+
+function kako
+    kak +$argv[1] "$RANDOM_KAK/keys.asciidoc"
+end
+
 function fish_greeting
-    ~/.config/fish/print_random_kak_key/main.rs
+    "$RANDOM_KAK/main.rs"
 end
